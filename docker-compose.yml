@@ -1,0 +1,10 @@
+version: "3.9"
+
+services:
+  app:
+    image: llm-fastapi
+    ports:
+      - "8000:4000"
+    environment:
+      HF_TOKEN:
+      LLM_NAME: google/gemma-2-2b-it
